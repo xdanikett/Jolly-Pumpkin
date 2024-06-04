@@ -52,6 +52,7 @@ body {
   border: none;
   font-family: "Shlop";
   font-size: 24.44px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav-button {
   display: flex;
@@ -73,6 +74,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.uniswap-img {
+  width: 44px;
 }
 
 /* Welcome text styling */
@@ -126,7 +130,20 @@ body {
 
 .info-image {
   margin-top: -58px;
+  position: relative;
 }
+
+.tree-gif {
+  position: absolute;
+  bottom: 0px;
+}
+.tree-gif-img {
+  width: 100%;
+}
+.tree-svg-img{
+  visibility: hidden;
+}
+
 
 .bottom-left {
   position: absolute;
@@ -162,14 +179,20 @@ body {
 .footer-image-full {
   width: 100%;
   position: inherit;
+  bottom: -5px;
 }
 .footer-social-icons {
   position: absolute;
   left: 300px;
   bottom: 40px;
   width: 40%;
-  height: 25px;
+  height: 28px;
   gap: 46px;
   display: flex;
   justify-content: flex-end;
+}
+.footer-uniswap-img {
+  height: 46px;
+  position: relative;
+  bottom: 12px;
 }

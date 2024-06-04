@@ -16,7 +16,9 @@
             <button type="button" class="header-button">Tokenomic</button>
           </div>
           <div>
-            <button type="button" class="header-button">What is Meme Coin?</button>
+            <button type="button" class="header-button">
+              What is Meme Coin?
+            </button>
           </div>
         </div>
         <div>
@@ -25,7 +27,7 @@
         <div class="header-social-icons">
           <img src="./images/telegram (1).svg" alt="telegram" />
           <img src="./images/Dextool.svg" alt="Dextool" />
-          <img src="./images/uniswap.svg" alt="uniswap" />
+          <img class="uniswap-img" src="./images/uniswap.svg" alt="uniswap" />
           <img src="./images/twitter (2).svg" alt="twitter" />
           <img src="./images/linktree.svg" alt="linktree" />
         </div>
@@ -59,14 +61,19 @@
           </p>
         </div>
         <div class="info-image">
-          <img src="./images/tree.svg" alt="" />
+          <img src="./images/tree.svg" class="tree-svg-img" alt=""/>
+          <div class="tree-gif">
+            <img class="tree-gif-img" src="images/Tree.gif" alt="" />
+          </div>
         </div>
+
+
+        
       </div>
       <div class="bottom-left">
         <img src="./images/pumpkin.svg" alt="" srcset="" />
       </div>
     </div>
-
     <!-- Tokenomic-Section -->
     <div class="tokenomic-section">
       <p class="tokenomic-title">Tokenomic</p>
@@ -80,10 +87,22 @@
       <div class="footer-social-icons">
         <img src="./images/telegram (1).svg" alt="telegram" />
         <img src="./images/Dextool.svg" alt="Dextool" />
-        <img src="./images/uniswap.svg" alt="uniswap" />
+        <img
+          class="footer-uniswap-img"
+          src="./images/uniswap.svg"
+          alt="uniswap"
+        />
         <img src="./images/twitter (2).svg" alt="twitter" />
         <img src="./images/linktree.svg" alt="linktree" />
       </div>
     </div>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      document.querySelector('.tree-svg-img').style.visibility = 'visible';
+      document.querySelector('.tree-gif-img').style.visibility = 'hidden';
+    }, 3000); 
+  });
+</script>
