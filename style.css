@@ -45,7 +45,9 @@ body {
   padding: 1.3rem 4rem;
   background: #772817;
 }
-
+.header2{
+  display: none;
+}
 /* Button styling */
 .header-button {
   height: 4.4rem;
