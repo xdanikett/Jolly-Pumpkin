@@ -32,21 +32,34 @@
           <img class="header-logo" src="./images/headerrlogoImage.svg" alt="" />
         </div>
         <div class="header-social-icons">
-          <img src="./images/telegram (1).svg" alt="telegram" />
-          <img src="./images/Dextool.svg" alt="Dextool" />
-          <img class="uniswap-img" src="./images/uniswap.svg" alt="uniswap" />
-          <img src="./images/twitter (2).svg" alt="twitter" />
-          <img src="./images/linktree.svg" alt="linktree" />
-        </div>
-        <div class="header2">
-          <button type="button" class="dropdown-toggle">Icons</button>
-          <div class="dropdown-menu">
-            <img src="./images/telegram (1).svg" alt="telegram" />
-            <img src="./images/Dextool.svg" alt="Dextool" />
-            <img class="uniswap-img" src="./images/uniswap.svg" alt="uniswap" />
-            <img src="./images/twitter (2).svg" alt="twitter" />
-            <img src="./images/linktree.svg" alt="linktree" />
-          </div>
+          <a rel="noopener" href="https://telegram.org/" target="_blank">
+            <img
+              id="social-icon"
+              src="./images/telegram (1).svg"
+              alt="telegram"
+            />
+          </a>
+          <a rel="noopener" href="https://telegram.org/" target="_blank">
+            <img id="social-icon" src="./images/Dextool.svg" alt="telegram" />
+          </a>
+          <a rel="noopener" href="https://telegram.org/" target="_blank">
+            <img
+              id="social-icon"
+              class="uniswap-img"
+              src="./images/uniswap.svg"
+              alt="telegram"
+            />
+          </a>
+          <a rel="noopener" href="https://telegram.org/" target="_blank">
+            <img
+              id="social-icon"
+              src="./images/twitter (2).svg"
+              alt="telegram"
+            />
+          </a>
+          <a rel="noopener" href="https://telegram.org/" target="_blank">
+            <img id="social-icon" src="./images/linktree.svg" alt="telegram" />
+          </a>
         </div>
       </header>
 
@@ -98,6 +111,7 @@
         />
       </div>
     </div>
+
     <!-- Tokenomic-Section -->
     <div class="tokenomic-section" id="tokenomicSection">
       <p class="tokenomic-title">Tokenomic</p>
@@ -127,8 +141,6 @@
   </body>
 </html>
 <script>
-  // Tokenomic Section
-
   document
     .getElementById("tokenomicButton")
     .addEventListener("click", function () {
@@ -136,8 +148,6 @@
         .getElementById("tokenomicSection")
         .scrollIntoView({ behavior: "smooth" });
     });
-
-  // Memecoin Section
 
   document
     .getElementById("memecoinButton")
@@ -175,7 +185,6 @@
       dropdownMenu.classList.toggle("show");
     });
 
-    // Close the dropdown if the user clicks outside of it
     window.addEventListener("click", function (event) {
       if (!event.target.matches(".dropdown-toggle")) {
         if (dropdownMenu.classList.contains("show")) {
