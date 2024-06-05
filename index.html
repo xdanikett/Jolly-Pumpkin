@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
     <title>Document</title>
   </head>
 
@@ -19,7 +19,11 @@
             </button>
           </div>
           <div>
-            <button type="button" class="header-button memeCoinButton" id="memecoinButton">
+            <button
+              type="button"
+              class="header-button memeCoinButton"
+              id="memecoinButton"
+            >
               What is Meme Coin?
             </button>
           </div>
@@ -42,7 +46,12 @@
       </div>
 
       <div>
-        <img class="heroLogoImg" src="./images/heroLogoImage.svg" alt="heroLogoImage" srcset="" />
+        <img
+          class="heroLogoImg"
+          src="./images/heroLogoImage.svg"
+          alt="heroLogoImage"
+          srcset=""
+        />
       </div>
     </div>
 
@@ -71,7 +80,12 @@
         </div>
       </div>
       <div class="bottom-left">
-        <img class="bottom-pumpkin-img" src="./images/pumpkin.svg" alt="" srcset="" />
+        <img
+          class="bottom-pumpkin-img"
+          src="./images/pumpkin.svg"
+          alt=""
+          srcset=""
+        />
       </div>
     </div>
     <!-- Tokenomic-Section -->
@@ -124,26 +138,20 @@
     });
 
   document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(function () {
-              document.querySelector(".tree-svg-img").style.visibility =
-                "visible";
-              document.querySelector(".tree-gif-img").style.visibility =
-                "hidden";
-            }, 3000);
-          }
-          else{
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(function () {
             document.querySelector(".tree-svg-img").style.visibility =
-                "hidden";
-              document.querySelector(".tree-gif-img").style.visibility =
-                "visible";
-          }
-        });
-      },
-    );
+              "visible";
+            document.querySelector(".tree-gif-img").style.visibility = "hidden";
+          }, 3000);
+        } else {
+          document.querySelector(".tree-svg-img").style.visibility = "hidden";
+          document.querySelector(".tree-gif-img").style.visibility = "visible";
+        }
+      });
+    });
 
     observer.observe(document.querySelector(".info-image"));
   });

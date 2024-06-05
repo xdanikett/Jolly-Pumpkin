@@ -5,9 +5,19 @@
     text-align: center;
     max-width: 616px;
   }
+  .header-logo {
+    max-width: 119px;
 
+    position: relative;
+    bottom: 104px;
+  }
+  .memeCoinButton {
+    position: relative;
+    left: 125px;
+  }
   .header-social-icons {
     margin-top: 10px;
+    display: none;
   }
 
   .info-content {
@@ -28,10 +38,30 @@
     left: 3.3rem;
     height: 30rem;
   }
+
   .nav-button {
     display: flex;
     width: 55%;
-    gap: 104px;
+    margin-top: 6px;
+  }
+
+  .tree-svg-img {
+    visibility: visible;
+    height: 250px;
+    margin: auto;
+    width: 100%;
+    margin-top: 26px;
+  }
+  .info-img {
+    margin-top: 0;
+  }
+  .tree-gif-img {
+    margin: auto;
+    width: 100%;
+    visibility: visible;
+    height: 240px;
+    margin-left: 140px;
+    margin-top: 26px;
   }
 }
 
