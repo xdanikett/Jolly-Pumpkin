@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
 
@@ -13,10 +13,12 @@
       <header class="header">
         <div class="nav-button">
           <div>
-            <button type="button" class="header-button">Tokenomic</button>
+            <button type="button" id="tokenomicButton" class="header-button">
+              Tokenomic
+            </button>
           </div>
           <div>
-            <button type="button" class="header-button">
+            <button type="button" class="header-button" id="memecoinButton">
               What is Meme Coin?
             </button>
           </div>
@@ -44,7 +46,7 @@
     </div>
 
     <!-- Info-Section -->
-    <div class="info-section">
+    <div class="info-section" id="memecoinSection">
       <div class="info-content">
         <div class="info-text">
           <p class="info-title">What's up with Jolly Pumpkin 🎃?</p>
@@ -61,23 +63,24 @@
           </p>
         </div>
         <div class="info-image">
-          <img src="./images/tree.svg" class="tree-svg-img" alt=""/>
+          <img src="./images/tree.svg" class="tree-svg-img" alt="" />
           <div class="tree-gif">
             <img class="tree-gif-img" src="images/Tree.gif" alt="" />
           </div>
         </div>
-
-
-        
       </div>
       <div class="bottom-left">
         <img src="./images/pumpkin.svg" alt="" srcset="" />
       </div>
     </div>
     <!-- Tokenomic-Section -->
-    <div class="tokenomic-section">
+    <div class="tokenomic-section" id="tokenomicSection">
       <p class="tokenomic-title">Tokenomic</p>
-      <img class="tokenomic-image" src="./images/donkey.svg" alt="" />
+      <img
+        class="tokenomic-image"
+        src="./images/Jolly pumpkin Tokenomics.png"
+        alt=""
+      />
     </div>
 
     <!-- Footer-Section -->
@@ -99,10 +102,48 @@
   </body>
 </html>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      document.querySelector('.tree-svg-img').style.visibility = 'visible';
-      document.querySelector('.tree-gif-img').style.visibility = 'hidden';
-    }, 3000); 
+  // Tokenomic Section
+
+  document
+    .getElementById("tokenomicButton")
+    .addEventListener("click", function () {
+      document
+        .getElementById("tokenomicSection")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+
+  // Memecoin Section
+
+  document
+    .getElementById("memecoinButton")
+    .addEventListener("click", function () {
+      document
+        .getElementById("memecoinSection")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(function () {
+              document.querySelector(".tree-svg-img").style.visibility =
+                "visible";
+              document.querySelector(".tree-gif-img").style.visibility =
+                "hidden";
+            }, 3000);
+          }
+          else{
+            document.querySelector(".tree-svg-img").style.visibility =
+                "hidden";
+              document.querySelector(".tree-gif-img").style.visibility =
+                "visible";
+          }
+        });
+      },
+    );
+
+    observer.observe(document.querySelector(".info-image"));
   });
 </script>
