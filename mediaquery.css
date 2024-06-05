@@ -1,0 +1,147 @@
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    max-width: 616px;
+  }
+
+  .header-social-icons {
+    margin-top: 10px;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+
+  .info-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-icons {
+    margin-top: 20px;
+  }
+  .footer-image-absolute {
+    bottom: 8.2rem;
+    position: absolute;
+    left: 3.3rem;
+    height: 30rem;
+  }
+  .nav-button {
+    display: flex;
+    width: 55%;
+    gap: 104px;
+  }
+}
+
+/* Small screens (phones, 480px and up) */
+@media (max-width: 480px) {
+  .header-logo {
+    max-width: 119px;
+
+    position: relative;
+    bottom: 104px;
+  }
+  .nav-button {
+    display: flex;
+    width: 88%;
+    margin-top: 6px;
+  }
+  .memeCoinButton {
+    position: relative;
+    left: 43px;
+  }
+  .header {
+    height: 44px;
+    margin-bottom: 35px;
+  }
+  .heroLogoImg {
+    height: 160px;
+  }
+  .header-social-icons {
+    display: none;
+  }
+  .welcome-text {
+    text-align: center;
+    opacity: 1;
+    font-family: "Shlop";
+    color: #94482b;
+  }
+
+  .welcome-text .line1 {
+    font-size: 3.5rem;
+  }
+  .welcome-text .line2 {
+    font-size: 4.5rem;
+  }
+
+  .header-social-icons img {
+    width: 20px;
+  }
+
+  .info-text .info-title {
+    font-size: 1.25rem;
+  }
+
+  .info-text .info-description {
+    font-size: 1rem;
+  }
+  .bottom-pumpkin-img {
+    height: 130px;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+  }
+  .tree-svg-img {
+    visibility: visible;
+    height: 250px;
+    margin: auto;
+    width: 100%;
+    margin-top: 26px;
+  }
+  .info-img {
+    margin-top: 0;
+  }
+  .tree-gif-img {
+    margin: auto;
+    width: 100%;
+    visibility: visible;
+    height: 240px;
+    margin-left: 80px;
+    margin-top: 26px;
+  }
+
+  .tokenomic-section .tokenomic-title {
+    font-size: 1.5rem;
+  }
+  .tokenomic-section {
+    background-color: #ffc9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 13rem;
+  }
+  .footer-image-absolute {
+    bottom: 5.2rem;
+    position: absolute;
+    left: 3.3rem;
+    height: 17rem;
+  }
+  .footer-social-icons {
+    position: absolute;
+    left: 17rem;
+    bottom: 3rem;
+    width: 40%;
+    height: 1.8rem;
+    gap: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-social-icons img {
+    width: 20px;
+  }
+}
