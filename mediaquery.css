@@ -132,6 +132,7 @@
   .footer-image-full {
     height: 11rem;
     object-fit: cover;
+    bottom: -1.5rem;
   }
 }
 

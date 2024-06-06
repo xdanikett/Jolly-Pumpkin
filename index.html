@@ -127,15 +127,29 @@
       <img class="footer-image-absolute" src="./images/footerimg.svg" alt="" />
       <img class="footer-image-full" src="./images/footer.svg" alt="" />
       <div class="footer-social-icons">
-        <img src="./images/telegram (1).svg" alt="telegram" />
-        <img src="./images/Dextool.svg" alt="Dextool" />
-        <img
-          class="footer-uniswap-img"
-          src="./images/uniswap.svg"
-          alt="uniswap"
-        />
-        <img src="./images/twitter (2).svg" alt="twitter" />
-        <img src="./images/linktree.svg" alt="linktree" />
+        <a rel="noopener" href="https://telegram.org/" target="_blank">
+          <img src="./images/telegram (1).svg" alt="telegram" />
+        </a>
+
+        <a rel="noopener" href="https://telegram.org/" target="_blank">
+          <img src="./images/Dextool.svg" alt="Dextool" />
+        </a>
+
+        <a rel="noopener" href="https://telegram.org/" target="_blank">
+          <img
+            class="footer-uniswap-img"
+            src="./images/uniswap.svg"
+            alt="uniswap"
+          />
+        </a>
+
+        <a rel="noopener" href="https://telegram.org/" target="_blank">
+          <img src="./images/twitter (2).svg" alt="twitter" />
+        </a>
+
+        <a rel="noopener" href="https://telegram.org/" target="_blank">
+          <img src="./images/linktree.svg" alt="linktree" />
+        </a>
       </div>
     </div>
   </body>
@@ -174,23 +188,5 @@
     });
 
     observer.observe(document.querySelector(".info-image"));
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector(".dropdown-toggle");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
-
-    toggleButton.addEventListener("click", function () {
-      dropdownMenu.classList.toggle("show");
-    });
-
-    window.addEventListener("click", function (event) {
-      if (!event.target.matches(".dropdown-toggle")) {
-        if (dropdownMenu.classList.contains("show")) {
-          dropdownMenu.classList.remove("show");
-        }
-      }
-    });
   });
 </script>
